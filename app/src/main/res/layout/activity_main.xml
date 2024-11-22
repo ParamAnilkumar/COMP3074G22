@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/Ash"
     android:orientation="vertical"
-    tools:context=".AdminPortalActivity">
+    tools:context=".MainActivity">
     <View
         android:id="@+id/login_desing"
         android:layout_width="match_parent"
@@ -112,5 +112,19 @@
                 android:textAlignment="center"
                 android:textSize="24sp" />
         </androidx.cardview.widget.CardView>
+
+        <ListView
+            android:id="@+id/orderListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search for orders" />
+
+
+
     </LinearLayout>
 </LinearLayout>
