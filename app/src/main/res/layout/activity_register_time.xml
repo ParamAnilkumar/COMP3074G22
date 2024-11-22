@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/Ash"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".RegisterTimeActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30sp"
                 android:fontFamily="@font/outfit_medium"
-                android:text="ManageX"
+                android:text="Register Time"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="50sp" />
@@ -42,27 +42,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="30sp"
                 android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/managePos"
-                    android:layout_width="0dp"
-                    android:layout_height="200sp"
-                    android:layout_margin="30sp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-
-                    app:cardElevation="4dp">
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/outfit_medium"
-                        android:gravity="center"
-                        android:text="Admin Portal"
-                        android:textAlignment="center"
-                        android:textSize="24sp" />
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/manageEmp"
@@ -79,7 +58,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/outfit_medium"
                         android:gravity="center"
-                        android:text="POS"
+                        android:text="Clock-In"
                         android:textAlignment="center"
                         android:textSize="24sp" />
                 </androidx.cardview.widget.CardView>
@@ -99,27 +78,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/outfit_medium"
                         android:gravity="center"
-                        android:text="Register Time"
-                        android:textAlignment="center"
-                        android:textSize="24sp" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/orderHistory"
-                    android:layout_width="0dp"
-                    android:layout_height="200sp"
-                    android:layout_margin="30sp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:fontFamily="@font/outfit_medium"
-                        android:gravity="center"
-                        android:text="Order Hisotry"
+                        android:text="Clock-Out"
                         android:textAlignment="center"
                         android:textSize="24sp" />
                 </androidx.cardview.widget.CardView>

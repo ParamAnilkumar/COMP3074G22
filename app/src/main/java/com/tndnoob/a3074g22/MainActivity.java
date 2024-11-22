@@ -1,6 +1,8 @@
 package com.tndnoob.a3074g22;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    TextView registerTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        registerTime = findViewById(R.id.clockOutButton);
+        registerTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RegisterTimeDialog dialog = new RegisterTimeDialog();
+                dialog.showDialog(MainActivity.this);
+            }
         });
     }
 }
