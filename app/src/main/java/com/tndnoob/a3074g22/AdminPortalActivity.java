@@ -41,6 +41,7 @@ public class AdminPortalActivity extends AppCompatActivity {
                 finish();
             }
         });
+
         managePOS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,5 +50,16 @@ public class AdminPortalActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        manageEmp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AdminPortalActivity.this, ManageEmployeeActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+
     }
 }
