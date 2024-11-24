@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/Ash"
     android:orientation="vertical"
-    tools:context=".AdminPortalActivity">
+    tools:context=".MainActivity">
     <View
         android:id="@+id/login_desing"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewAdminPortal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/outfit_medium"
@@ -64,7 +64,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewPOS"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/outfit_medium"
@@ -84,7 +84,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textViewRegisterTime"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/outfit_medium"
@@ -103,7 +103,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textViewOrderHistory"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/outfit_medium"

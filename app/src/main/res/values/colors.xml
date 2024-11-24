@@ -11,4 +11,5 @@
     <color name="avatarColor">#F1F5FB</color> <!-- Light blueish background for the avatar area -->
     <color name="avatarOutline">#4D4981</color> <!-- Outline for the avatar -->]
     <color name="Ash">#CDCDCD</color>
+    <color name="grey">#4A4A4A</color>
 </resources>
