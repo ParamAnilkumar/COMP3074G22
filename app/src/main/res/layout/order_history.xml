@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@android:drawable/ic_menu_revert"
-            android:contentDescription="Back"
+            android:contentDescription="@string/back"
             android:padding="10dp"
             app:tint="#040404"
             android:clickable="true"
@@ -84,15 +84,14 @@
             android:inputType="text"
             android:textColorHint="@color/white" />
 
-        <ImageView
+        <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_search"
-            android:contentDescription="Search Icon"
-            android:layout_marginStart="8dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search # Order Number"
             android:padding="8dp"
-            app:tint="#005BBB" />
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <!-- ListView -->

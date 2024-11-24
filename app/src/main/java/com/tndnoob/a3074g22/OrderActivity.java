@@ -1,19 +1,16 @@
 package com.tndnoob.a3074g22;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.tndnoob.a3074g22.Order;
-import com.tndnoob.a3074g22.OrderAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
-
+public class OrderActivity extends AppCompatActivity {
     private ListView orderListView;
     private List<Order> orders;
 
@@ -24,16 +21,17 @@ public class MainActivity extends AppCompatActivity {
 
         orderListView = findViewById(R.id.orderListView);
         orders = new ArrayList<>();
-        createDummyData(); // Add some dummy data
+        createDummyData();
 
         OrderAdapter adapter = new OrderAdapter(this, orders);
         orderListView.setAdapter(adapter);
 
+        // Handle the search functionality
         SearchView searchView = findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                // Handle search submit (optional)
+                // Handle query submission if needed
                 return false;
             }
 
@@ -43,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        // Handle the back button in the toolbar
+        ImageView backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(view -> onBackPressed());
     }
 
     private void createDummyData() {
