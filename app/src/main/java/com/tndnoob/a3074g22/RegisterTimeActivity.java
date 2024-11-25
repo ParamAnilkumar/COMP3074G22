@@ -2,8 +2,10 @@
 package com.tndnoob.a3074g22;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -21,6 +23,7 @@ public class RegisterTimeActivity extends AppCompatActivity {
 
     TextView clockInButton;
     TextView clockOutButton;
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,16 @@ public class RegisterTimeActivity extends AppCompatActivity {
 
         clockInButton = findViewById(R.id.clockInButton);
         clockOutButton =findViewById(R.id.clockOutButton);
+        back = findViewById(R.id.buttonBack1);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(RegisterTimeActivity.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
 
         clockInButton.setOnClickListener(new View.OnClickListener() {

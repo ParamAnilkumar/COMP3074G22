@@ -43,7 +43,7 @@ holder.sectionName.setText(sectionList.get(position));
             super(itemView);
             sectionName = itemView.findViewById(R.id.textViewSectionTitle);
             imageView = itemView.findViewById(R.id.imageViewImage);
-            imageView.setImageResource(R.drawable.baseline_restaurant_menu_24);
+            imageView.setImageResource(R.drawable.ic_android_black_24dp);
         }
     }
 

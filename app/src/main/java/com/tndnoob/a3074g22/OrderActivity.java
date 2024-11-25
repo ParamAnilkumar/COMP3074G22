@@ -1,6 +1,9 @@
 package com.tndnoob.a3074g22;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +20,7 @@ public class OrderActivity extends AppCompatActivity {
 
     private ListView orderListView;
     private List<Order> orders;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,14 @@ public class OrderActivity extends AppCompatActivity {
 
         OrderAdapter adapter = new OrderAdapter(this, orders);
         orderListView.setAdapter(adapter);
+        back = findViewById(R.id.backButton2);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(OrderActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         SearchView searchView = findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
