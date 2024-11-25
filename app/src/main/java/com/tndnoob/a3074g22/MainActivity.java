@@ -2,7 +2,7 @@ package com.tndnoob.a3074g22;
 
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.SearchView;
+import androidx.appcompat.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
